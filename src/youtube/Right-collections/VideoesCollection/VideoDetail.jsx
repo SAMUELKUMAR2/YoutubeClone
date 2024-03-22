@@ -7,6 +7,7 @@ const  VideoDetail = ({ Videoes}) => {
   return (
     <div>
         <h2>Video</h2>
+        <h3>all video</h3>
         {Videoes.map((Item,idx)=>(
  
  <div key={idx} className='   m-2  flex  flex-col  '>
