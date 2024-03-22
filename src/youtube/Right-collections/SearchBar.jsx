@@ -6,7 +6,7 @@ import upload from '../icons/upload.png'
 import notification from '../icons/notification.png'
 import circle from '../icons/circle.png'
 import TagsCollection from '../Tags/TagsCollection.jsx'
-import CardCollection from './CardCollection/CardCollection.jsx'
+import CardCollection from './VideoesCollection/CardCollection.jsx'
 
 const SearchBar = () => {
     return (

@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { createContext } from 'react'
 import Tags from './Tags.jsx'
+
+
 
 const TagsCollection = () => {
   return (
     
     <div className='flex w-full overflow-y-scroll pl-1 pr-1  scrollbar-hide'>
+     
    <Tags name="All" />
    <Tags name="JavaScript" />
    <Tags name="Music" />
@@ -15,6 +18,7 @@ const TagsCollection = () => {
    <Tags name ="Java" />
    <Tags name="html" />
    <Tags name="python" />
+   
     </div>
   )
 }
