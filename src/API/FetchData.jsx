@@ -18,7 +18,7 @@ const options = {
       const response = await axios.request(options);
     //   console.log(response.data);
   } catch (error) {
-      console.error(error);
+      // console.error(error);
   }
 export const FetchData = async(url)=>{
 const {data} =await axios.get(`${BASE_URL}/${url}`,options);
