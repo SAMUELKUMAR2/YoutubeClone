@@ -10,9 +10,9 @@ const  VideoDetail = ({ Videoes}) => {
         <h3>all video</h3>
         {Videoes.map((Item,idx)=>(
  
- <div key={idx} className='   m-2  flex  flex-col  '>
+ <div key={idx} className='   m-2  flex   '>
   
-   {Item.id.videoId && <VideoCollection video={Item} />}
+   {Item.id.videoId && <VideoCollection video={Item}  />}
    
   
    </div>

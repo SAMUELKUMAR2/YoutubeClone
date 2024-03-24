@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-const VideoCollection = ({ video: { id: { videoId }, snippet } }) => {
+const VideoCollection = ({ video: { id: { videoId }, snippet }}) => {
   // console.log(videoId);
 
   return (<>
    
 <Link to={videoId?`/Youtube-Clone/video/${videoId}`:videoId}>
-    <div className='grid grid-cols-3 max-lg:block'>
+    <div className='grid grid-cols-3  max-lg:block'>
 
             <div className=' col-span-1   gap-2 border overflow-hidden rounded-2xl hover:rounded-none ' >
               <img className='  ' src={snippet?.thumbnails?.high?.url} alt={snippet?.title} />

@@ -12,7 +12,7 @@ const ChannelDetail = () => {
   
     const [ChannelDetail,SetChannelDetail]=useState(null);
     const [Videoes,SetVideoes] = useState([]);
-    // console.log(ChannelDetail,Videoes);
+    console.log(ChannelDetail);
     // console.log(Videoes);
     useEffect(()=>{
 

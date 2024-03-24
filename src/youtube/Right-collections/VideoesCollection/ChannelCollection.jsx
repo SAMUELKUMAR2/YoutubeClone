@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 const ChannelCollection = ({ChannelDetails}) => {
-// console.log(ChannelDetails);
+console.log(ChannelDetails);
   return (
     <div className='grid   grid-cols-3 max-lg:block'>
       <Link to={`/Youtube-Clone/channel/${ChannelDetails?.id?.channelId}`}>
@@ -17,8 +17,15 @@ const ChannelCollection = ({ChannelDetails}) => {
                 <h6 className=' text-sm font-semibold'>{ChannelDetails?.snippet?.channelTitle}</h6>
 
               </div>
+              {/* Subscriber count */}
+              <div className='flex flex-col font-thin text-base '>
+              <p>{ChannelDetails?.snippet?.customUrl} . 
+              {ChannelDetails?.statistics?.subscriberCount} Subscriber</p>
+              </div>
+
               <p className='truncate pr-4 overflow-hidden font-thin text-base mt-2'>{ChannelDetails?.snippet?.
                 description}</p>
+
             </div>
             </Link>
             <div className='flex justify-end items-center mr-5 pr-[20px] pb-[30px]'>

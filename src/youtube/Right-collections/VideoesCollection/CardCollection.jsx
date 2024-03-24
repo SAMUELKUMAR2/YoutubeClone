@@ -6,7 +6,7 @@ import { FetchData } from '../../../API/FetchData.jsx'
 
 const CardCollection = () => {
   const [videoes, setvideoes] = useState([]);
-  const [SelectCategory, SetselectedCategory] = useState('Javascript');
+  const [SelectCategory, SetselectedCategory] = useState('jen gamer');
 
 
   // console.log(FetchData(`search?part=snippet&q=${SelectCategory}`));
