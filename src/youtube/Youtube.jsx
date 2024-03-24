@@ -2,12 +2,12 @@ import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './Youtube.css'
 
-import SearchBar from './Right-collections/SearchBar.jsx'
+import Searbar from './NavBar/Searbar.jsx'
 import SideBar from './SideBar/SideBar.jsx'
+import CardCollection from './Right-collections/CardCollection/CardCollection.jsx'
 import ChannelDetail from './Right-collections/VideoesCollection/ChannelDetail.jsx'
 import VideoDetail from './Right-collections/VideoesCollection/VideoDetail.jsx'
 import SearchFeed from './Right-collections/VideoesCollection/SearchFeed.jsx'
-import Searbar from './NavBar/Searbar.jsx'
 
 function Youtube() {
 
@@ -29,7 +29,7 @@ function Youtube() {
     <Searbar />
 
      <Routes>
-      <Route path='/Youtube-Clone' exact element={<SearchBar  />}/>
+      <Route path='/Youtube-Clone' exact element={<CardCollection  />}/>
       <Route path='/Youtube-Clone/channel/:id'  element={<ChannelDetail  />} />
       <Route path='/Youtube-Clone/video/:id'  element={<VideoDetail/>}/>
       
