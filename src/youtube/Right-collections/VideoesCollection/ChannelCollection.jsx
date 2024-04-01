@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 const ChannelCollection = ({ChannelDetails}) => {
-console.log(ChannelDetails);
+// console.log(ChannelDetails);
   return (
     <div className='grid   grid-cols-3 max-lg:block'>
       <Link to={`/Youtube-Clone/channel/${ChannelDetails?.id?.channelId}`}>

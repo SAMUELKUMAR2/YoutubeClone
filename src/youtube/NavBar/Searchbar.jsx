@@ -12,24 +12,28 @@ const Searchbar = () => {
 
     const navigate = useNavigate();
     const [SearchTerm, SetSearchTerm] = useState('');
+    
     const handleSubmit=(e)=>{
         e.preventDefault();
         console.log(e.target.value);
         if(SearchTerm){
             navigate(`/Youtube-Clone/Search/${SearchTerm}`);
             SetSearchTerm('');
+            
+
         }
     }
   return (
-    <div>
-   <div className="searchbar flex justify-between ">
+    <>
+   <div className=" w-[95%] fixed pb-1 bg-white overflow-hidden flex ">
                 {/* search input box, search button */}
+                <div className='flex justify-between '>
                <form onSubmit={handleSubmit}>
-                <div className=' m-1 flex ml-20'  onSubmit={handleSubmit}>
+                <div className=' m-1 pt-1 flex ml-[7vw] border-5 border-l-rose-600 '  onSubmit={handleSubmit}>
                     <input value={SearchTerm}
 
                      onChange={(e)=>{SetSearchTerm(e.target.value)}}
-                    className='rounded-l-full w-80 pr-3 pl-3 border-2 border-opacity-30 border-black' placeholder='search'>
+                    className='rounded-l-full w-[40vw] pr-3 pl-3 border-2 border-opacity-30 border-gray-950 outline-neutral-950' placeholder='search'>
 
                     </input>
                     <div className='flex border-r-2 border-t-2 border-b-2 border-opacity-30 border-black rounded-r-full bg-white'>
@@ -43,14 +47,14 @@ const Searchbar = () => {
 
                     
                     {/* mic */}
-                    <div className='mic m-1 ml-3 p-2 flex justify-center bg-blue-200 rounded-full w-9 h-9'>
+                    <div className='mic m-1 ml-3 p-2 self-end bg-blue-200 rounded-full w-9 h-9'>
                         <img src={mic} alt="mic" />
                     </div>
                 </div>
             </form>
                
                 {/* uploader ,notification, email */}
-                <div className='three-Item mr-8 flex justify-center justify-items-center gap-5'>
+                <div className=' pl-[12vw] flex  gap-5'>
                     {/* uploader */}
                     <div className='uploader flex justify-center'>
                         <button className=''>
@@ -70,14 +74,15 @@ const Searchbar = () => {
                             <img className='w-8 h-8'src={circle} alt="email" />
                         </button>
                     </div>
+                    </div>
                 </div>
             </div> 
 {/* Tags */}
 
-<div className=''>
+<div className=' mt-[5%]'>
                 <TagsCollection />
             </div>
-    </div>
+    </>
   )
 }
 

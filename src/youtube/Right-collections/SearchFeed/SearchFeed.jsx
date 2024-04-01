@@ -23,7 +23,7 @@ const [Videoes,SetVideos] = useState([]);
     <div>
     
     <div className='w-full h-screen   '>
-      <h5 className='font-bold flex '>{SearchTerm} Videoes</h5>
+      <h5 className='pl-1 font-bold flex '>{SearchTerm} Videoes</h5>
       <VideoesCards videoes={Videoes} />
 
       {/* Scroll Button */}

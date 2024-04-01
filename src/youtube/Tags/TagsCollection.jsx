@@ -6,7 +6,7 @@ import Tags from './Tags.jsx'
 const TagsCollection = () => {
   return (
     
-    <div className='flex w-full overflow-y-scroll pl-1 pr-1  scrollbar-hide'>
+    <div className='flex w-[98%] overflow-y-scroll pl-2 pr-2   '>
      
    <Tags name="All" />
    <Tags name="JavaScript" />
