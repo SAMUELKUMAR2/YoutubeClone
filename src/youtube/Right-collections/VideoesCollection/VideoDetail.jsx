@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from 'react'
-
+import ReactPlayer from 'react-player'
 import { FetchData } from '../../../API/FetchData'
 import { useParams } from 'react-router-dom'
 
@@ -18,12 +18,20 @@ const  VideoDetail = () => {
   }, [id])
   return (
     
-    <div>
-    <div className=' col-span-1   gap-2 border overflow-hidden rounded-2xl hover:rounded-none ' >
-              {/* <img className='  ' src={snippet?.thumbnails?.high?.url} alt={snippet?.title} /> */}
-            </div>
-     
+    <>
+    <div className='w-[95vw]'>
+      <div className='w-[100%] sticky '>
+      <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`} 
+      controls
+      className="react-player" />
+      </div>
+      <div>
+      <h2 className='font-semibold'>{VideoDetail.snippet.title}</h2>
+      </div>
+      
+
     </div>
+    </>
   )
 }
 
