@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 const VideoCollection = ({ video: { id: { videoId }, snippet }}) => {
-  // console.log(videoId);
+  // console.log(snippet);
 
   return (<>
    
