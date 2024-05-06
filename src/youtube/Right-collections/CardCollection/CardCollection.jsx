@@ -11,13 +11,7 @@ const CardCollection = () => {
 
   // console.log(FetchData(`search?part=snippet&q=${SelectCategory}`));
 
-  const handleScroll = () => {
-    window.scrollTo({
-
-      top: 0,
-      behavior: "smooth"
-    })
-  }
+ 
   useEffect(() => {
     FetchData(`search?part=snippet&q=${SelectCategory}`)
       .then((data) => {
@@ -29,13 +23,10 @@ const CardCollection = () => {
   return (
 
 
-    <div className='w-[98%] h-[100%] overflow-y-scroll '>
+    <div className='w-[98%] h-[98vh] overflow-y-scroll border-2 border-red-600 '>
       <h5 className='pl-1 font-bold flex '>{SelectCategory}</h5>
-      <VideoesCards videoes={videoes} />
-
-      {/* Scroll Button */}
-      <button onClick={handleScroll} id='scrollToTop'
-       className='cursor-pointer outline-none fixed bottom-4 right-[20px] opacity-1'>^</button>
+      <VideoesCards videoes={videoes} SelectCategory={SelectCategory} SetselectedCategory={SetselectedCategory} />
+ 
      
 
 

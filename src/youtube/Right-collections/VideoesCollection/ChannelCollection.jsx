@@ -32,6 +32,7 @@ const ChannelCollection = ({ChannelDetails}) => {
              <button className='border pl-2 pr-2 pb-1 rounded-full font-normal text-white bg-gray-950'>
               <h6>Subscribe</h6></button>
             </div>
+            
     </div>
   )
 }

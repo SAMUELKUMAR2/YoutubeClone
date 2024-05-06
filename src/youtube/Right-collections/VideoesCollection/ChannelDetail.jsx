@@ -13,7 +13,7 @@ const ChannelDetail = () => {
     const [ChannelDetail,SetChannelDetail]=useState(null);
     const [Videoes,SetVideoes] = useState([]);
     // console.log(ChannelDetail);
-    // console.log(Videoes);
+    console.log(Videoes);
     useEffect(()=>{
 
         // searching channelDetail by id
@@ -36,7 +36,7 @@ const ChannelDetail = () => {
     
         <div className=''>
        <ChannelCollection ChannelDetails={ChannelDetail} />
-        <VideoDetail Videoes={Videoes} />
+        {/* <VideoCollection Videoes={Videoes} /> */}
 
         </div>
     </div>

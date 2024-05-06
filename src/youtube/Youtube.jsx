@@ -15,7 +15,7 @@ function Youtube() {
   return (<>
   
   <div className='flex '>
-    <div className=' text-2xl  w-full h-screen grid grid-cols-5 gap-4 '>
+    <div className=' text-2xl  w-full  grid grid-cols-5 gap-4 '>
   
       <div className='fixed col-span-1 rounded-2xl max-lg::invisible'>
       <SideBar />

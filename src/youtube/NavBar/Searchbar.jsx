@@ -25,7 +25,7 @@ const Searchbar = () => {
     }
   return (
     <>
-   <div className=" w-[95%] fixed pb-1 bg-white overflow-hidden flex ">
+   <div className=" w-[95%] sticky pb-1 bg-white overflow-hidden flex ">
                 {/* search input box, search button */}
                 <div className='flex justify-between '>
                <form onSubmit={handleSubmit}>
@@ -79,9 +79,7 @@ const Searchbar = () => {
             </div> 
 {/* Tags */}
 
-<div className=' mt-[5%]'>
-                <TagsCollection />
-            </div>
+
     </>
   )
 }
